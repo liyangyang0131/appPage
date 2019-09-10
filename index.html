@@ -1,29 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>整平滑动宣传页</title>
-    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'/>
-    <link rel="stylesheet" href="plugins/swiper.min.css">
-    <link rel="stylesheet" href="plugins/animate.min.css">
-    <link rel="stylesheet" href="index.css">
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0' />
+    <link rel="stylesheet" href="./plugins/swiper.min.css">
+    <link rel="stylesheet" href="./plugins/animate.min.css">
+    <link rel="stylesheet" href="./index.css">
 </head>
+
 <body>
-<div class="swiper-container">
-    <div class="swiper-wrapper">
-        <section class="swiper-slide swiper-slide1">
-            <img src="images/01.jpg" class="ani resize" style="width:320px;left:0px;top:30px;z-index:3;" swiper-animate-effect="swing" swiper-animate-duration="1.5s" swiper-animate-delay="0s"  >
-        </section>
-        <section class="swiper-slide swiper-slide2">
-            <img src="images/02.jpg" class="ani resize" style="width:320px;left:0px;top:10px;z-index:5; " swiper-animate-effect="bounce" swiper-animate-duration="0.5s" swiper-animate-delay="0s"  >
-        </section>
+    <div class="bgMusic">
+        <audio id="myMusic" src="./audio/bg.mp3" autoplay loop></audio>
     </div>
 
-    <img src="images/arrow.jpg" style="width:20px;height:15px; top:460px; left:150px;" id="array" class="resize">
-    <div class="swiper-pagination"></div>
-</div>
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide page page1">
+                <div class="ani" swiper-animate-effect="bounceInUp" swiper-animate-duration="1s"
+                swiper-animate-delay="0.2s">
+                    <h3>你儿时的的梦想</br>是什么？</h3>
+                    <p>作家？航天员？周游世界？</p>
+                </div>
+            </div>
+            <div class="swiper-slide page page2">
+                <div class="ani" swiper-animate-effect="slideInDown" swiper-animate-duration="1s"
+                swiper-animate-delay="0.2s">
+                    <h3>你呢？</h3>
+                    <p class="ani" swiper-animate-effect="fadeIn" swiper-animate-duration="0.5s" swiper-animate-delay="1s">这个世界很大，我想出去走走！</p>
+                </div>
+            </div>
+            <div class="swiper-slide page page3">
+                <div class="ani" swiper-animate-effect="pulse" swiper-animate-duration="1s"
+                swiper-animate-delay="0.2s">
+                    <h3>土耳其篇</h3>
+                    <p>土耳其是一个横跨欧亚大陆的伊斯兰教国家，被称为"文明的摇篮"。<br><b>最佳季节：</b>4月-10月最佳，不过海岸线长达八千千米的土耳其，各区域的气候各不相同，如果要进行海水浴，5月-10月最好，去土耳其东部，则7月-9月最好。
+                    </p>
+                </div>
+            </div>
+            <div class="swiper-slide page page4">
+                <div class="ani" swiper-animate-effect="slideInRight" swiper-animate-duration="1s"
+                swiper-animate-delay="0.2s">
+                    <div class="page4-img"></div>
+                    <p>意大利因其拥有美丽的自然风光和为数众多的人类文化遗产而被称为美丽的国度。<br><b>最佳季节：</b>5月-10月最佳，意大利一年四季都适合旅游，旺季集中在每年5月至10月，4-6月是天气最好的季节。
+                    </p>
+                </div>
+            </div>
+            <div class="swiper-slide page page5">
+                <div class="ani" swiper-animate-effect="shake" swiper-animate-duration="1s"
+                swiper-animate-delay="0.2s">
+                    <h3>威尼斯篇</h3>
+                    <p>威尼斯（Venice），别名“亚得里亚海的女王”、“水都”、“桥之城”及“光之城”，堪称世界最浪漫的城市之一。<br><b>最佳季节：</b>3-5月、9-11月。<br>1、每年3月～5月：春季是威尼斯最舒服的季节，平均气温10－18℃，气候宜人，景色旖旎。
+                        <br>2、每年9月～11月：秋天的威尼斯可谓人见人爱，经过一个夏天的热闹，秋天的运河格外清澈美丽，这个季节是威尼斯最清爽的季节。</p>
+                </div>
+            </div>
+            <div class="swiper-slide page page6">
+                <div class="ani" swiper-animate-effect="zoomInUp" swiper-animate-duration="1s"
+                swiper-animate-delay="0.2s">
+                    <h3>想去哪里？</br>赶紧行动起来吧！</h3>
+                </div>
 
-<script src="plugins/swiper.min.js"></script>
-<script src="index.js"></script>
+            </div>
+        </div>
+
+        <img src="images/arrow.png" id="array" class="resize arrow">
+        <div class="swiper-pagination"></div>
+    </div>
+
+    <script src="./plugins/zepto.js"></script>
+    <script src="./plugins/swiper.min.js"></script>
+    <script src="./plugins/swiper.animate.min.js"></script>
+    <script src="./index.js"></script>
 </body>
+
 </html>
