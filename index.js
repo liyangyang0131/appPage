@@ -23,40 +23,6 @@ var mySwiper = new Swiper('.swiper-container', {
             //this.slideChangeTransitionEnd.eq(this.activeIndex).find('.ani').removeClass('ani'); //动画只展现一次，去除ani类名
         }
     }
-    // onInit: function (swiper) {//初始化之后执行
-    //     swiperAnimateCache(swiper);//隐藏动画元素
-    //     swiperAnimate(swiper);//初始化完成开始动画
-    // },
-    // onSlideChangeEnd: function (swiper) {//回调函数，slider切换结束时执行。
-    //     swiperAnimate(swiper);//每个slide切换结束时也运行当前slide动画
-    // },
-    // onTransitionEnd: function (swiper) {//回调函数，过渡结束时触发，接收Swiper实例作为参数。
-    //     swiperAnimate(swiper);
-    // },
-    // //watchSlidesProgress: true,//开启这个参数来计算每个slide的progress(进度)，Swiper的progress无需设置即开启。
-    // onProgress: function (swiper) {//回调函数，当Swiper的progress被改变时执行。接受Swiper实例和progress作为参数（可选）。
-    //     for (var i = 0; i < swiper.slides.length; i++) {
-    //         var slide = swiper.slides[i];
-    //         var progress = slide.progress;
-    //         var translate = progress * swiper.height / 4;
-    //         scale = 1 - Math.min(Math.abs(progress * 0.5), 1);
-    //         var opacity = 1 - Math.min(Math.abs(progress / 2), 0.5);
-    //         slide.style.opacity = opacity;
-    //         es = slide.style;
-    //         es.webkitTransform = es.MsTransform = es.msTransform = es.MozTransform = es.OTransform = es.transform = 'translate3d(0,' + translate + 'px,-' + translate + 'px) scaleY(' + scale + ')';
-    //     }
-    // },
-    // onSetTransition: function (swiper, speed) {//回调函数，每次当Swiper开始过渡动画时持续执行。transtion获取到的是Swiper的speed值。
-    //     for (var i = 0; i < swiper.slides.length; i++) {
-    //         es.webkitTransitionDuration =
-    //             es.MsTransitionDuration =
-    //             es.msTransitionDuration =
-    //             es.MozTransitionDuration =
-    //             es.OTransitionDuration =
-    //             es.transitionDuration = speed + 'ms';
-    //     }
-    // }
-
 })
 
 $(function () {
